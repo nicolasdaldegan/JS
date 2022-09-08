@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="program.js"></script>
+    <!--linka o js-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Matriz</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <br>
+            <label for="num1"></label>
+            <input class="colorir" type="number" id="num1" name="num1" placeholder="Primeiro número" size="10"><br>
+            <label for="num2"></label>
+            <input class="colorir" type="number" id="num2" name="num2" placeholder="Segundo número" size="10"><br><br>
+            <!--Matriz-->
+            <input class="but" type="button" value="Inverter matriz"
+                onclick="imprimeParagrafo(num1.value, num2.value, 1);">
+            <input class="but" type="button" value="Produto da matriz"
+                onclick="imprimeParagrafo(num1.value, num2.value, 2);">
+            <input class="apagar" class="but" type="button" value="X" onclick="apagar();">
+            <p id="demo"><br></p><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>
